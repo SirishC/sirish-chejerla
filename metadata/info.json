@@ -1,0 +1,46 @@
+{
+    "profile": {
+        "firstname": "Sirish",
+        "lastname": "Chejerla",
+        "phone": "2247161859",
+        "phone_code": "+1",
+        "email_personal": "chejerlasirish@gmail.com",
+        "email_college": "schejerl@purdue.edu",
+        "linkedin": "https://www.linkedin.com/in/sirish-c/",
+        "github": "https://github.com/SirishC",
+        "location_country": "US",
+        "location_city": "Hammond",
+        "location,_state": "Indiana"
+    },
+    "college": [
+        {
+            "name": "Purdue University Northwest",
+            "location_country": "US",
+            "location_city": "Hammond",
+            "location,_state": "Indiana",
+            "GPA": 3.57,
+            "level": "MS Computer Science"
+        },
+        {
+            "name": "Amrita School of Engineering",
+            "location_country": "IND",
+            "location_city": "Coimbatore",
+            "location,_state": "Tamilnadu",
+            "GPA": 3.33,
+            "level": "MS Computer Science"
+        }
+    ],
+    "work_experience":[
+        {
+            "name":"Genesys Cloud Services",
+            "role":"Software Engineer",
+            "location_country": "IND",
+            "location_city": "Chennai",
+            "location,_state": "Tamilnadu",
+            "duration_from":"Sep 2020",
+            "duration_to":"Dec 2022"
+        }
+    ]
+
+    
+}
