@@ -1,17 +1,13 @@
-import React, { useEffect , useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./Style.css";
 
-const Sections = ({ sections, setActiveSection , sectionRefs }) => {
-
+const Sections = ({ sections, setActiveSection, sectionRefs }) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-
           if (entry.isIntersecting) {
-            console.log(entry.target.id);
             setActiveSection(entry.target.id);
-
           }
         });
       },
@@ -26,7 +22,7 @@ const Sections = ({ sections, setActiveSection , sectionRefs }) => {
   }, [setActiveSection]);
   return (
     <div>
-      {sections.map(({ id, title , page }, index) => (
+      {sections.map(({ id, title, page }, index) => (
         <div
           className="sections"
           key={id}
@@ -38,7 +34,6 @@ const Sections = ({ sections, setActiveSection , sectionRefs }) => {
       ))}
     </div>
   );
-}
-
+};
 
 export default Sections;

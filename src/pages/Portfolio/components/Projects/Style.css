@@ -1,4 +1,22 @@
-.projects{
-    margin: 20px;
-    padding: 20px;
+.projects {
+  margin: 20px;
+  padding: 20px;
+}
+
+.proj-title {
+  font-size: x-large;
+}
+.proj-date {
+  font-size: medium;
+}
+.proj-name {
+  font-weight: bold;
+}
+
+.proj-desc {
+  font-size: 13px;
+}
+
+.proj-link {
+  text-align: center;
 }

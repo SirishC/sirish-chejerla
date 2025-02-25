@@ -5,10 +5,11 @@ const About = () => {
     <div>
       <div className="about">
         <p className="points">
-          👋 Hey, I'm Sirish, a passionate <b>Software Engineer</b> with experience in
-          full-stack development, cloud computing, and AI-driven solutions. With
-          a strong foundation in Java, Python, and JavaScript, I specialize in
-          building scalable applications and crafting seamless user experiences.
+          👋 Hey, I'm Sirish, a passionate <b>Software Engineer</b> with
+          experience in full-stack development, cloud computing, and AI-driven
+          solutions. With a strong foundation in Java, Python, and JavaScript, I
+          specialize in building scalable applications and crafting seamless
+          user experiences.
         </p>
         <p className="points">
           🚀 Over the years, I've worked on cloud-based microservices, AI
@@ -18,11 +19,11 @@ const About = () => {
           versatile problem solver.
         </p>
         <p className="points">
-          🔬 Currently, I'm pursuing my Master's in Computer Science at <b>Purdue
-          University Northwest</b>, where I've contributed to gunshot detection
-          research and developed innovative AI monitoring solutions. Previously,
-          I worked at <b>Genesys Cloud Services</b>, focusing on cloud automation and
-          predictive analytics.
+          🔬 Currently, I'm pursuing my Master's in Computer Science at{" "}
+          <b>Purdue University Northwest</b>, where I've contributed to gunshot
+          detection research and developed innovative AI monitoring solutions.
+          Previously, I worked at <b>Genesys Cloud Services</b>, focusing on
+          cloud automation and predictive analytics.
         </p>
         <p className="points">
           💡 I love tackling complex problems, optimizing performance, and
@@ -30,7 +31,9 @@ const About = () => {
           coding, you'll find me exploring machine learning, cybersecurity
           trends, or refining my personal development projects.
         </p>
-        <p className="points"><b>Let's connect and build something amazing!</b></p>
+        <p className="points">
+          <b>Let's connect and build something amazing!</b>
+        </p>
       </div>
     </div>
   );

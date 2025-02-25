@@ -1,5 +1,44 @@
-.experience{
-    margin: 20px;
-    padding: 20px;
-    
+.experience {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+}
+
+.exp-date {
+  display: inline;
+  max-width: fit-content;
+  padding: 15px;
+  white-space: nowrap;
+  /* background-color: aqua; */
+}
+.exp-content {
+  padding: 15px;
+}
+
+.exp-company {
+  font-size: large;
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+.exp-roles {
+  padding-bottom: 10px;
+}
+.exp-desc {
+  font-size: 14px;
+}
+
+.exp-skills {
+  margin-top: 20px;
+  font-size: 15 px;
+}
+
+.exp-skill {
+  padding: 3px 5px;
+  margin-left: 5 px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.exp-title {
+  font-size: x-large;
 }

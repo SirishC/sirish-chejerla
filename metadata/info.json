@@ -1,46 +1,76 @@
 {
-    "profile": {
-        "firstname": "Sirish",
-        "lastname": "Chejerla",
-        "phone": "2247161859",
-        "phone_code": "+1",
-        "email_personal": "chejerlasirish@gmail.com",
-        "email_college": "schejerl@purdue.edu",
-        "linkedin": "https://www.linkedin.com/in/sirish-c/",
-        "github": "https://github.com/SirishC",
-        "location_country": "US",
-        "location_city": "Hammond",
-        "location,_state": "Indiana"
+  "profile": {
+    "firstname": "Sirish",
+    "lastname": "Chejerla",
+    "phone": "2247161859",
+    "phone_code": "+1",
+    "email_personal": "chejerlasirish@gmail.com",
+    "email_college": "schejerl@purdue.edu",
+    "linkedin": "https://www.linkedin.com/in/sirish-c/",
+    "github": "https://github.com/SirishC",
+    "location_country": "US",
+    "location_city": "Hammond",
+    "location,_state": "Indiana",
+    "roles":["Software Engineer" , "DevOPS Engineer" ,"Frontend Developer"]
+  },
+  "college": [
+    {
+      "name": "Purdue University Northwest",
+      "location_country": "US",
+      "location_city": "Hammond",
+      "location,_state": "Indiana",
+      "GPA": 3.57,
+      "level": "MS Computer Science"
     },
-    "college": [
-        {
-            "name": "Purdue University Northwest",
-            "location_country": "US",
-            "location_city": "Hammond",
-            "location,_state": "Indiana",
-            "GPA": 3.57,
-            "level": "MS Computer Science"
-        },
-        {
-            "name": "Amrita School of Engineering",
-            "location_country": "IND",
-            "location_city": "Coimbatore",
-            "location,_state": "Tamilnadu",
-            "GPA": 3.33,
-            "level": "MS Computer Science"
-        }
-    ],
-    "work_experience":[
-        {
-            "name":"Genesys Cloud Services",
-            "role":"Software Engineer",
-            "location_country": "IND",
-            "location_city": "Chennai",
-            "location,_state": "Tamilnadu",
-            "duration_from":"Sep 2020",
-            "duration_to":"Dec 2022"
-        }
-    ]
-
-    
+    {
+      "name": "Amrita School of Engineering",
+      "location_country": "IND",
+      "location_city": "Coimbatore",
+      "location,_state": "Tamilnadu",
+      "GPA": 3.33,
+      "level": "MS Computer Science"
+    }
+  ],
+  "work_experience": [
+    {
+      "dates": "SEP 2020 - DEC 2022",
+      "company": "Genesys Cloud Services",
+      "role": "Software Engineer",
+      "description": "I have hands-on experience in software development, automation, and cloud engineering, specializing in Java, Python, and JUnit for building and testing applications. At Genesys, I optimized Voicemail Microservices and Predictive Routing on AWS and Azure, leveraging Docker, Kubernetes, and Azure Blob Storage for scalable deployments. I automated 100+ test scenarios using Selenium and Jest, reducing manual efforts by 40%, and integrated them with Jenkins for continuous testing. Additionally, I managed Linux and Windows test servers, ensured 99.9% uptime, and used Azure Monitor and Grafana for proactive monitoring. My expertise extends to performance testing with JMeter and Postman, CI/CD pipeline management via Jenkins and Azure DevOps, and AI model evaluation using Scikit-learn. I follow Agile methodologies, maintain high coding standards with Git, and create detailed documentation in Markdown and Confluence to streamline development and maintenance.",
+      "skills": [
+        " Kubernetes",
+        " CI/CD ",
+        " DEVOPS ",
+        " Jenkins ",
+        " Javascript ",
+        " Python"
+      ]
+    },
+    {
+      "dates": "AUG 2023 - JAN 2024",
+      "company": "Purdue University Northwest",
+      "role": "Graduate Research Assistant / Grader ",
+      "description": "Conducted research on gunshot detection to improve time synchronization accuracy, reducing delays from milliseconds to microseconds. Designed Purdue-TimeSync, a Python-based simulation for analyzing network delays, and performed real-time testing at the University Police Building to enhance system reliability. Additionally, evaluated assignments and provided feedback as a grader for graduate-level Algorithms and Software Engineering courses.",
+      "skills": [
+        " Python",
+        " Machine Learning",
+        " Algorithms",
+        " Software Engineering"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "date": "Jun 2020",
+      "title": "Introspective Journal: Diary for Self-Realization (Springer Journal)",
+      "description": "Our application helps users understand themselves by identifying patterns in behaviors, emotions, and experiences through tagging and analytical insights, fostering self-awareness and personal growth.",
+      "link": "https://link.springer.com/chapter/10.1007/978-981-15-4218-3_23"
+    },
+    {
+      "date": "Jun 2021 – Jan 2022",
+      "title": "Live Monitoring AI Prototype",
+      "description": "Developed an AI-powered anomaly detection model utilizing LSTM (Long Short-Term Memory) and Grafana Metrics for real-time cloud monitoring. Deployed the model as a Flask API, significantly enhancing system scalability and improving response times.Analyzed memory leaks and anomalies by leveraging data from staging and production environments, focusing on Redis storage to evaluate memory loss and optimize performance.",
+      "link": ""
+    }
+  ]
 }

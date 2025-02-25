@@ -1,71 +1,63 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .main {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
 }
 
-.left{
-    width: 47vw;
-    height: 100vh;
-    /* background-color: aqua; */
-    display: flex;
-    
+.left {
+  width: 45vw;
+  height: 100vh;
+  /* background-color: aqua; */
+  display: flex;
 }
 
-.right{
-    width:53vw;
-    height: 100vh;
-    overflow-y: auto;
-    
+.right {
+  width: 55vw;
+  height: 100vh;
+  overflow-y: auto;
 }
 
-.name{
-    /* background-color: aqua; */
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 60px;
-    padding-right: 15px;
+.name {
+  /* background-color: aqua; */
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 80px;
+  padding-right: 15px;
+}
+.moto {
+  /* background-color: blueviolet; */
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  margin-top: 20px;
+  font-size: 15px;
+  font-style: normal;
 }
 
-.roles , .moto{
-    /* background-color: blueviolet; */
-    font-family: "Manrope", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-size: 15px;
-    font-style: normal;
+.fields {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.fields{
-    padding-top: 5px;
-    padding-bottom: 5px;
+.title {
+  text-align: left;
+  padding-left: 150px;
+  padding-top: 150px;
 }
 
-.roles{
-}
-.title{
-   text-align: left;
-    padding: 150px;
+.text {
+  padding: 30px;
+  font-size: larger;
 }
 
-.text{
-    padding: 30px;
-    font-size: larger;
-    background-color: palegreen;
-
+.text-container {
+  padding: 30px;
 }
-
-.text-container{
-    padding: 30px;
-
-}
-.content-list{
-    margin: 130px;
-    padding: 30px;
-    /* display: flex; */
+.content-list {
+  margin-left: 130px;
+  padding: 30px;
 }

@@ -1,12 +1,11 @@
-.about{
-    padding: 20px;
-    margin: 30px;
-  
+.about {
+  padding: 20px;
+  margin: 30px;
 }
 
-.points{
-    font-size: 20px;
-    padding: 10px;
-    margin: 5px;
-    word-wrap:normal;
+.points {
+  font-size: 20px;
+  padding: 10px;
+  margin: 5px;
+  word-wrap: normal;
 }
