@@ -1,4 +1,10 @@
 import React from "react";
+import { HugeiconsIcon } from "@hugeicons/react";
+import {
+  GithubIcon,
+  LeetcodeIcon,
+  LinkedinIcon,
+} from "@hugeicons/core-free-icons";
 
 const SideSection = ({ sections, handleClick, profile, activeSection }) => {
   return (
@@ -26,7 +32,10 @@ const SideSection = ({ sections, handleClick, profile, activeSection }) => {
           <button
             className="resume"
             onClick={() =>
-              window.open("https://drive.google.com/file/d/1ybmvT6wFPMj-RJvs6KuEaizCsxegv5oy/view?usp=sharing", "_blank")
+              window.open(
+                "https://drive.google.com/file/d/1ybmvT6wFPMj-RJvs6KuEaizCsxegv5oy/view?usp=sharing",
+                "_blank"
+              )
             }
           >
             My Resume
@@ -48,6 +57,42 @@ const SideSection = ({ sections, handleClick, profile, activeSection }) => {
             </div>
           ))}
         </div>
+
+        <div className="contact">
+          <a href={profile.linkedin} target="_blank">
+            <div className="contact-icons">
+              <HugeiconsIcon
+                icon={LinkedinIcon}
+                size={24}
+                color="currentColor"
+                strokeWidth={0.5}
+              />
+            </div>
+          </a>
+          <a href={profile.github} target="_blank">
+            <div className="contact-icons">
+              <HugeiconsIcon
+                icon={GithubIcon}
+                size={24}
+                color="currentColor"
+                strokeWidth={0.5}
+              />
+            </div>
+          </a>
+          <a href={profile.leetcode} target="_blank">
+            <div className="contact-icons">
+              <HugeiconsIcon
+                icon={LeetcodeIcon}
+                size={24}
+                color="currentColor"
+                strokeWidth={0.5}
+              />
+            </div>
+          </a>
+        </div>
+        <footer class="portfolio-footer">
+            <p>This portfolio is under construction 🛠️ - Built by Sirish Chejerla</p>
+        </footer>
       </div>
     </div>
   );

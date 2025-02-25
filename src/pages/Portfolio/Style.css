@@ -58,6 +58,8 @@
   padding: 30px;
 }
 .content-list {
+    height: 150px;
+    /* background-color: aqua; */
   margin-left: 130px;
   padding: 30px;
 }

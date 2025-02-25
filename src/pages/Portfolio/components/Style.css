@@ -38,8 +38,39 @@
 }
 
 .resume:hover {
-  background-color: #2ee59d;
+  background-color: #000;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-7px);
+}
+
+.contact {
+  margin-left: 130px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #2ee59d; */
+}
+.contact-icons {
+  width: fit-content;
+  margin: 20px;
+  cursor: pointer;
+}
+.contact-icons:hover{
+    /* background-color: #000; */
+    box-shadow: 0px 10px 20px rgba(46, 229, 157, 0.4);
+    /* color: #fff; */
+    /* transform: translateY(-7px); */
+}
+.portfolio-footer {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #555;
+  margin-top: 50px;
+}
+
+.portfolio-footer p {
+  margin: 0;
 }
