@@ -10,8 +10,19 @@ import SideSection from "./components/SideSection";
 
 const Layout = () => {
   const [activeSection, setActiveSection] = useState(null);
+  const [isResponsiveView, setIsResponsiveView] = useState(
+    window.innerWidth < 1024
+  );
   const sectionRefs = useRef([]);
+  const rightDivRefs = useRef([]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsResponsiveView(window.innerWidth < 1024);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   const handleClick = (id) => {
     const section = sectionRefs.current.find((el) => el && el.id === id);
     if (section) {
@@ -19,6 +30,13 @@ const Layout = () => {
         behavior: "smooth",
         block: "start",
       });
+    }
+  };
+
+  const handleLeftScroll = (event) => {
+    console.log("scrolling in left-div");
+    if (!isResponsiveView && rightDivRefs.current) {
+      rightDivRefs.current.scrollTop += event.deltaY;
     }
   };
 
@@ -38,21 +56,47 @@ const Layout = () => {
 
   return (
     <div className="main">
-      <div className="left">
-        <SideSection
-          sections={sections}
-          handleClick={handleClick}
-          profile={data.profile}
-          activeSection={activeSection}
-        />
+      <div className="left-div" onWheel={handleLeftScroll}>
+        <div className="filler">
+          <SideSection
+            sections={sections}
+            handleClick={handleClick}
+            profile={data.profile}
+            activeSection={activeSection}
+            isResponsiveView={isResponsiveView}
+          />
+        </div>
+        <div>
+          {!isResponsiveView && (
+            <footer>
+              <p>
+                This portfolio is under construction 🛠️ - Built by Sirish
+                Chejerla
+              </p>
+            </footer>
+          )}
+        </div>
       </div>
-      <div className="right">
+      <div className="right-div" ref={rightDivRefs}>
         <div>
           <Sections
             sections={sections}
             setActiveSection={setActiveSection}
             sectionRefs={sectionRefs}
           />
+        </div>
+        <div className="filler">
+
+        </div>
+        <div>
+          {isResponsiveView && (
+            <footer>
+              <p>
+                This portfolio is under construction 🛠️ - Built by Sirish
+                Chejerla
+              </p>
+            </footer>
+          )}
         </div>
       </div>
     </div>

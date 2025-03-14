@@ -1,65 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .main {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
   display: flex;
+  height: 100vh;
+  overflow: hidden; /* Prevent body scrolling */
+}
+.left-div {
+  width: 50%;
+  height: 100vh;
+  /* background-color: aquamarine; */
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
-.left {
-  width: 45vw;
-  height: 100vh;
-  /* background-color: aqua; */
-  display: flex;
-}
-
-.right {
-  width: 55vw;
+.right-div {
+  width: 50%;
+  margin-left: 50%;
   height: 100vh;
   overflow-y: auto;
+  /* background-color: firebrick; */
 }
 
-.name {
+.filler{
+  height: fit-content;
+}
+
+
+@media (max-width: 1024px) {
+  .main {
+      flex-direction: column;
+      height: auto;
+      overflow: auto; /* Allow full-page scrolling */
+  }
+
+  .left-div {
+      width: 100%;
+      height: 50vh;
+      position: relative;
+  }
+
+  .right-div {
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+      overflow: hidden; /* Remove scrolling when stacked */
+  }
+}
+
+
+/* Footer Styling */
+footer {
+  margin-top: 10em;
   /* background-color: aqua; */
-  font-family: "Montserrat", serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 80px;
-  padding-right: 15px;
-}
-.moto {
-  /* background-color: blueviolet; */
-  font-family: "Manrope", serif;
-  font-optical-sizing: auto;
+  width: 100%;
+  text-align: center;
+  color: #333;
+  font-size: 0.9rem;
   font-weight: 500;
-  margin-top: 20px;
-  font-size: 15px;
-  font-style: normal;
+  position: relative; /* Ensures it stays at the bottom of its parent */
+  bottom: 0;
 }
 
-.fields {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.title {
-  text-align: left;
-  padding-left: 150px;
-  padding-top: 150px;
-}
-
-.text {
-  padding: 30px;
-  font-size: larger;
-}
-
-.text-container {
-  padding: 30px;
-}
-.content-list {
-    height: 150px;
-    /* background-color: aqua; */
-  margin-left: 130px;
-  padding: 30px;
+/* Responsive Footer */
+@media screen and (max-width: 768px) {
+  footer {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
 }

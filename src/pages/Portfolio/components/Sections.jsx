@@ -11,7 +11,7 @@ const Sections = ({ sections, setActiveSection, sectionRefs }) => {
           }
         });
       },
-      { threshold: 0.5 } // Trigger when at least 50% of the section is visible
+      { threshold: 0.5 } 
     );
 
     sectionRefs.current.forEach((section) => {

@@ -6,7 +6,13 @@ import {
   LinkedinIcon,
 } from "@hugeicons/core-free-icons";
 
-const SideSection = ({ sections, handleClick, profile, activeSection }) => {
+const SideSection = ({
+  sections,
+  handleClick,
+  profile,
+  activeSection,
+  isResponsiveView,
+}) => {
   return (
     <div>
       <div className="title">
@@ -41,22 +47,24 @@ const SideSection = ({ sections, handleClick, profile, activeSection }) => {
             My Resume
           </button>
         </div>
-        <div className="content-list">
-          {sections.map(({ id, title }) => (
-            <div key={id}>
-              <button
-                key={id}
-                style={{
-                  fontSize: activeSection === id ? "2rem" : "1rem",
-                  transition: "font-size 0.3s ease-in-out",
-                }}
-                onClick={() => handleClick(id)}
-              >
-                {title}
-              </button>
-            </div>
-          ))}
-        </div>
+        {!isResponsiveView && (
+          <div className="content-list">
+            {sections.map(({ id, title }) => (
+              <div key={id}>
+                <button
+                  key={id}
+                  style={{
+                    fontSize: activeSection === id ? "2rem" : "1rem",
+                    transition: "font-size 0.3s ease-in-out",
+                  }}
+                  onClick={() => handleClick(id)}
+                >
+                  {title}
+                </button>
+              </div>
+            ))}
+          </div>
+        )}
 
         <div className="contact">
           <a href={profile.linkedin} target="_blank">
@@ -90,9 +98,9 @@ const SideSection = ({ sections, handleClick, profile, activeSection }) => {
             </div>
           </a>
         </div>
-        <footer class="portfolio-footer">
+        {/* <footer class="portfolio-footer">
             <p>This portfolio is under construction 🛠️ - Built by Sirish Chejerla</p>
-        </footer>
+        </footer> */}
       </div>
     </div>
   );

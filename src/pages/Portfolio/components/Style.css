@@ -1,75 +1,233 @@
-.sections {
-  height: fit-content;
-  /* width: 100%; */
-  padding: 30px;
-  margin: 30px;
-  /* background-color: blue; */
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 20px;
+  margin: 4em;
+}
+
+.fields-1 {
+  display: flex;
+  gap: 8px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.name {
+  text-transform: capitalize;
+  font-size: 2.5em;
+}
+
+.fields {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .profile-roles {
-  padding: 5px;
-  font-size: larger;
-}
-.resume-container {
-  height: 100%;
-  margin-left: 130px;
-  padding: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.resume {
-  width: 140px;
-  height: 45px;
-  font-family: "Roboto", sans-serif;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
+  font-size: 16px;
   font-weight: 500;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 5px 12px;
+  border-radius: 5px;
+  background: rgba(0, 123, 255, 0.1);
+}
+
+.moto {
+  font-size: 18px;
+  font-weight: 400;
+  color: #555;
+  margin-top: 8px;
+  max-width: 80%;
+  line-height: 1.5;
+}
+
+
+
+.resume-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Adjust based on parent size */
+  width: 100%;
+}
+
+.resume {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  background: white;
+  border: 2px solid #007bff;
+  border-radius: 6px;
   cursor: pointer;
-  outline: none;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  text-decoration: none;
 }
 
 .resume:hover {
-  background-color: #000;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
+  background: #007bff;
+  color: white;
 }
 
+.resume:active {
+  background: #0056b3;
+  border-color: #0056b3;
+}
+
+
+@media (max-width: 1024px) {
+  .title{
+    margin-bottom: 1em;
+  }
+  .resume-container{
+    height: 50%;
+  }
+  .resume {
+    padding: 5px 10px;
+  }
+  .moto{
+    line-height: normal;
+    margin-top: 2px;
+  }
+}
+
+
+
+/* Content List Container */
+.content-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+  align-items:first baseline;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  /* background-color: #555; */
+}
+
+/* Individual Section Button */
+.content-list div {
+  display: flex;
+}
+
+.content-list button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Active Section Styling */
+.content-list button:hover,
+.content-list button:focus {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+.content-list button:active {
+  color: #0056b3;
+}
+
+/* Underline Animation */
+.content-list button::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #007bff;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+
+.content-list button:hover::after,
+.content-list button:focus::after {
+  width: 100%;
+}
+
+
+/* Contact Section */
 .contact {
-  margin-left: 130px;
-  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* Contact Icons */
+.contact a {
+  text-decoration: none;
+}
+
+.contact-icons {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: #2ee59d; */
-}
-.contact-icons {
-  width: fit-content;
-  margin: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  /* box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); */
   cursor: pointer;
 }
-.contact-icons:hover{
-    /* background-color: #000; */
-    box-shadow: 0px 10px 20px rgba(46, 229, 157, 0.4);
-    /* color: #fff; */
-    /* transform: translateY(-7px); */
-}
-.portfolio-footer {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  color: #555;
-  margin-top: 50px;
+
+/* Icon Styling */
+.contact-icons svg {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  color: #444;
 }
 
-.portfolio-footer p {
-  margin: 0;
+/* Hover Effect */
+.contact-icons:hover {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.contact-icons:hover svg {
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Responsive Styles for Screens < 1024px */
+@media screen and (max-width: 1024px) {
+  .contact {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .contact-icons {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Responsive Styles for Screens < 600px (Mobile) */
+@media screen and (max-width: 600px) {
+  .contact {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-icons {
+    width: 45px;
+    height: 45px;
+  }
 }
