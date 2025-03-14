@@ -98,9 +98,6 @@ const SideSection = ({
             </div>
           </a>
         </div>
-        {/* <footer class="portfolio-footer">
-            <p>This portfolio is under construction 🛠️ - Built by Sirish Chejerla</p>
-        </footer> */}
       </div>
     </div>
   );
