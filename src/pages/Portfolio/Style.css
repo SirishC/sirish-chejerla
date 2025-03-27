@@ -50,6 +50,8 @@
 
 /* Footer Styling */
 footer {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
   margin-top: 10em;
   /* background-color: aqua;*/
   width: 100%;

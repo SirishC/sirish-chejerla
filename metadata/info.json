@@ -8,18 +8,18 @@
     "email_college": "schejerl@purdue.edu",
     "linkedin": "https://www.linkedin.com/in/sirish-c/",
     "github": "https://github.com/SirishC",
-    "leetcode":"https://leetcode.com/u/SirishC/",
+    "leetcode": "https://leetcode.com/u/SirishC/",
     "location_country": "US",
     "location_city": "Hammond",
-    "location,_state": "Indiana",
-    "roles":["Software Engineer" , "DevOPS Engineer" ,"Frontend Developer"]
+    "location_state": "Indiana",
+    "roles": ["Software Engineer", "DevOps Engineer", "Frontend Developer", "Full-Stack Developer"]
   },
   "college": [
     {
       "name": "Purdue University Northwest",
       "location_country": "US",
       "location_city": "Hammond",
-      "location,_state": "Indiana",
+      "location_state": "Indiana",
       "GPA": 3.57,
       "level": "MS Computer Science"
     },
@@ -27,36 +27,56 @@
       "name": "Amrita School of Engineering",
       "location_country": "IND",
       "location_city": "Coimbatore",
-      "location,_state": "Tamilnadu",
+      "location_state": "Tamil Nadu",
       "GPA": 3.33,
-      "level": "MS Computer Science"
+      "level": "B.Tech Computer Science"
     }
   ],
   "work_experience": [
     {
-      "dates": "Sep 2020 - Dec 2022",
-      "company": "Genesys Cloud Services",
-      "role": "Software Engineer",
-      "description": "I have hands-on experience in software development, automation, and cloud engineering, specializing in Java, Python, and JUnit for building and testing applications. At Genesys, I optimized Voicemail Microservices and Predictive Routing on AWS and Azure, leveraging Docker, Kubernetes, and Azure Blob Storage for scalable deployments. I automated 100+ test scenarios using Selenium and Jest, reducing manual efforts by 40%, and integrated them with Jenkins for continuous testing. Additionally, I managed Linux and Windows test servers, ensured 99.9% uptime, and used Azure Monitor and Grafana for proactive monitoring. My expertise extends to performance testing with JMeter and Postman, CI/CD pipeline management via Jenkins and Azure DevOps, and AI model evaluation using Scikit-learn. I follow Agile methodologies, maintain high coding standards with Git, and create detailed documentation in Markdown and Confluence to streamline development and maintenance.",
+      "dates": "Aug 2023 - Jan 2024",
+      "company": "Purdue University Northwest",
+      "role": "Graduate Research Assistant / Grader",
+      "description": "Conducted research on gunshot detection to improve time synchronization accuracy, reducing delays from milliseconds to microseconds. Designed Purdue-TimeSync, a Python-based simulation for analyzing network delays, and performed real-time testing at the University Police Building to enhance system reliability. Additionally, evaluated assignments and provided feedback as a grader for graduate-level Algorithms and Software Engineering courses.",
       "skills": [
-        " Kubernetes",
-        " CI/CD ",
-        " DEVOPS ",
-        " Jenkins ",
-        " Javascript ",
-        " Python"
+        "Python",
+        "Machine Learning",
+        "Algorithms",
+        "Software Engineering",
+        "Data Analysis"
       ]
     },
     {
-      "dates": "Aug 2023 - Jan 2024",
-      "company": "Purdue University Northwest",
-      "role": "Graduate Research Assistant / Grader ",
-      "description": "Conducted research on gunshot detection to improve time synchronization accuracy, reducing delays from milliseconds to microseconds. Designed Purdue-TimeSync, a Python-based simulation for analyzing network delays, and performed real-time testing at the University Police Building to enhance system reliability. Additionally, evaluated assignments and provided feedback as a grader for graduate-level Algorithms and Software Engineering courses.",
+      "dates": "Jan 2023 - May 2023",
+      "company": "TradeCred",
+      "role": "Frontend Developer (Freelancing)",
+      "description": "Designed and implemented the website’s color scheme, improving visual consistency and increasing user engagement by 20%. Created reusable React components, reducing code duplication by 25%, and developed UI animations that boosted user interaction time by 18%. Optimized the registration flow for HUF, Company, and LLP processes, improving efficiency by 30% and reducing form errors. Ensured seamless alignment and positioning across web and mobile views, achieving a 100% legibility rate.",
       "skills": [
-        " Python",
-        " Machine Learning",
-        " Algorithms",
-        " Software Engineering"
+        "ReactJS",
+        "Redux",
+        "Git",
+        "JavaScript",
+        "CSS3",
+        "Responsive Design"
+      ]
+    },
+    {
+      "dates": "Sep 2020 - Dec 2022",
+      "company": "Genesys Cloud Services",
+      "role": "Software Engineer",
+      "description": "Developed and maintained cloud-based applications, specializing in Voicemail Microservices and Predictive Routing on AWS and Azure. Designed automation pipelines that reduced manual testing efforts by 40% using Selenium and Jest. Managed Linux and Windows test servers, ensuring 99.9% uptime and system reliability. Integrated CI/CD pipelines using Jenkins, improving deployment efficiency. Led performance testing with JMeter and Postman, optimizing API response times. Worked on AI-driven customer interaction analytics using Scikit-learn to enhance predictive accuracy.",
+      "skills": [
+        "Kubernetes",
+        "CI/CD",
+        "DevOps",
+        "Jenkins",
+        "JavaScript",
+        "Python",
+        "Docker",
+        "Azure",
+        "AWS",
+        "Grafana",
+        "Postman"
       ]
     }
   ],
@@ -64,14 +84,23 @@
     {
       "date": "Jun 2020",
       "title": "Introspective Journal: Diary for Self-Realization (Springer Journal)",
-      "description": "Our application helps users understand themselves by identifying patterns in behaviors, emotions, and experiences through tagging and analytical insights, fostering self-awareness and personal growth.",
-      "link": "https://link.springer.com/chapter/10.1007/978-981-15-4218-3_23"
+      "description": "Developed a Flutter mobile app with SQLite for self-development insights visualization. Implemented sentiment analysis using NLP techniques to track user emotions. The application helps users understand behavioral patterns through analytical insights, fostering self-awareness and personal growth.",
+      "link": "https://link.springer.com/chapter/10.1007/978-981-15-4218-3_23",
+      "technologies": ["Flutter", "SQLite", "NLP", "Dart"]
     },
     {
       "date": "Jun 2021 – Jan 2022",
       "title": "Live Monitoring AI Prototype",
-      "description": "Developed an AI-powered anomaly detection model utilizing LSTM (Long Short-Term Memory) and Grafana Metrics for real-time cloud monitoring. Deployed the model as a Flask API, significantly enhancing system scalability and improving response times.Analyzed memory leaks and anomalies by leveraging data from staging and production environments, focusing on Redis storage to evaluate memory loss and optimize performance.",
-      "link": ""
+      "description": "Developed an AI-powered anomaly detection model utilizing LSTM (Long Short-Term Memory) and Grafana Metrics for real-time cloud monitoring. Deployed the model as a Flask API, significantly enhancing system scalability and improving response times. Analyzed memory leaks and anomalies by leveraging data from staging and production environments, focusing on Redis storage to evaluate memory loss and optimize performance.",
+      "link": "",
+      "technologies": ["Python", "Flask", "Grafana", "LSTM", "Redis"]
+    },
+    {
+      "date": "Nov 2023",
+      "title": "PNWCampusMap",
+      "description": "Led the development of an interactive campus map for Purdue Northwest using React.js and Leaflet APIs. Designed a seamless user interface that allows students and visitors to navigate campus buildings, parking areas, and key landmarks efficiently. Implemented RESTful APIs for frontend-backend communication and optimized location-based searches for quick access.",
+      "link": "",
+      "technologies": ["React.js", "Leaflet.js", "REST API", "Node.js"]
     }
   ]
 }

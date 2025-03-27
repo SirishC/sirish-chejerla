@@ -7,6 +7,9 @@
 }
 
 .proj-title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: 2rem;
   color: #333;
   margin-bottom: 20px;
@@ -32,6 +35,9 @@
 }
 /* Date Section */
 .proj-date {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: 0.9rem;
   font-weight: bold;
   color: #555;
@@ -47,12 +53,18 @@
 }
 
 .proj-name {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: 1.2rem;
   font-weight: bold;
   color: #222;
 }
 
 .proj-desc {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: 0.9rem;
   color: #444;
   margin-bottom: 10px;
@@ -61,6 +73,9 @@
 
 /* Project Link */
 .proj-link {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   display: inline-block;
   background: #007bff;
   color: white;

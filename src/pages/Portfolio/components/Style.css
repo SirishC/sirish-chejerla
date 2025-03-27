@@ -1,4 +1,5 @@
 .title {
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +18,9 @@
 }
 
 .name {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   text-transform: capitalize;
   font-size: 2.5em;
 }
@@ -29,6 +33,9 @@
 }
 
 .profile-roles {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: 16px;
   font-weight: 500;
   color: #007bff;
@@ -39,6 +46,9 @@
 }
 
 .moto {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: 18px;
   font-weight: 400;
   color: #555;

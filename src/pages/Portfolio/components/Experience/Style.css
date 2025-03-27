@@ -7,6 +7,9 @@
 }
 
 .exp-title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: 2rem;
   color: #333;
   margin-bottom: 20px;
@@ -33,6 +36,9 @@
 
 /* Date Section */
 .exp-date {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: 0.9rem;
   font-weight: bold;
   color: #555;
@@ -48,18 +54,27 @@
 }
 
 .exp-company {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: 1.2rem;
   font-weight: bold;
   color: #222;
 }
 
 .exp-roles {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: 1rem;
   color: #666;
   margin-bottom: 8px;
 }
 
 .exp-desc {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: 0.9rem;
   color: #444;
   margin-bottom: 10px;
@@ -74,6 +89,9 @@
 }
 
 .exp-skill {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   background: #007bff;
   color: white;
   font-size: 0.8rem;
