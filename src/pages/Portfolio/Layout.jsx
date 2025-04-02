@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef } from "react";
 import "./Style.css";
 import data from "../../../metadata/info.json";
 
-import About from "./components/About/About";
+import About from "../../components/sections/About";
 import Sections from "./components/Sections";
-import Experience from "./components/Experience/Experience";
-import Projects from "./components/Projects/Projects";
+import Experience from "../../components/sections/Experience";
+import Projects from "../../components/sections/Projects";
 import SideSection from "./components/SideSection";
 
 const Layout = () => {

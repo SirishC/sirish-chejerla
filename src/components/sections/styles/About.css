@@ -1,0 +1,20 @@
+.about {
+    padding: 20px;
+    margin: 30px;
+    background: rgba(0, 253, 200, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+    -webkit-backdrop-filter: blur(7.6px);
+  }
+  
+  .points {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
+    word-wrap: normal;
+  }
+  

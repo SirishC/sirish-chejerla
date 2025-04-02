@@ -1,5 +1,5 @@
 import React from "react";
-import "./Style.css";
+import "./styles/Projects.css";
 
 const Projects = ({ projects }) => {
   return (
@@ -12,7 +12,12 @@ const Projects = ({ projects }) => {
             <div className="proj-name">{proj.title}</div>
             <div className="proj-desc">{proj.description}</div>
             {proj.link && (
-              <a href={proj.link} className="proj-link" target="_blank" rel="noopener noreferrer">
+              <a
+                href={proj.link}
+                className="proj-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 View Project
               </a>
             )}
