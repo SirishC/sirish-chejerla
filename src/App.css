@@ -5,23 +5,20 @@
   padding: 0;
 }
 .main {
-  margin: 0;
-  padding: 0;
-  background: rgb(201, 255, 191);
-  background: -moz-radial-gradient(
+  background-image: radial-gradient(
     circle,
-    rgba(201, 255, 191, 1) 0%,
-    rgba(255, 175, 189, 1) 100%
+    #070506,
+    #0b0509,
+    #0c050e,
+    #0b0612,
+    #080716,
+    #070d1b,
+    #04121f,
+    #001622,
+    #001c27,
+    #00222a,
+    #00282b,
+    #002e2b
   );
-  background: -webkit-radial-gradient(
-    circle,
-    rgba(201, 255, 191, 1) 0%,
-    rgba(255, 175, 189, 1) 100%
-  );
-  background: radial-gradient(
-    circle,
-    rgba(201, 255, 191, 1) 0%,
-    rgba(255, 175, 189, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c9ffbf",endColorstr="#ffafbd",GradientType=1);
 }
+  

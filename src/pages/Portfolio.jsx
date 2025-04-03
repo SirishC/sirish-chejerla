@@ -1,14 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./Style.css";
-import data from "../../../metadata/info.json";
+import data from "../../metadata/info.json";
+import "./styles/Portfolio.css";
+import About from "../components/sections/About";
+import Sections from "../components/ui/Sections";
+import Experience from "../components/sections/Experience";
+import Projects from "../components/sections/Projects";
+import SideSection from "../components/ui/SideSection";
 
-import About from "./components/About/About";
-import Sections from "./components/Sections";
-import Experience from "./components/Experience/Experience";
-import Projects from "./components/Projects/Projects";
-import SideSection from "./components/SideSection";
-
-const Layout = () => {
+const Portfolio = () => {
   const [activeSection, setActiveSection] = useState(null);
   const [isResponsiveView, setIsResponsiveView] = useState(
     window.innerWidth < 1024
@@ -58,13 +57,13 @@ const Layout = () => {
     <div className="main">
       <div className="left-div" onWheel={handleLeftScroll}>
         <div className="filler">
-          <SideSection
-            sections={sections}
-            handleClick={handleClick}
-            profile={data.profile}
-            activeSection={activeSection}
-            isResponsiveView={isResponsiveView}
-          />
+            <SideSection
+              sections={sections}
+              handleClick={handleClick}
+              profile={data.profile}
+              activeSection={activeSection}
+              isResponsiveView={isResponsiveView}
+            />
         </div>
         <div>
           {!isResponsiveView && (
@@ -85,9 +84,7 @@ const Layout = () => {
             sectionRefs={sectionRefs}
           />
         </div>
-        <div className="filler">
-
-        </div>
+        <div className="filler"></div>
         <div>
           {isResponsiveView && (
             <footer>
@@ -103,4 +100,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default Portfolio;

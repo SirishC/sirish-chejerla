@@ -1,5 +1,5 @@
 import React from "react";
-import "./Style.css";
+import "./styles/Experience.css";
 
 const Experience = ({ experiences }) => {
   return (
@@ -14,7 +14,9 @@ const Experience = ({ experiences }) => {
             <div className="exp-desc">{exp.description}</div>
             <div className="exp-skills">
               {exp.skills.map((skill, i) => (
-                <span key={i} className="exp-skill">{skill}</span>
+                <span key={i} className="exp-skill">
+                  {skill}
+                </span>
               ))}
             </div>
           </div>
