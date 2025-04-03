@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./Style.css";
+import "./styles/Sections.css";
 
 const Sections = ({ sections, setActiveSection, sectionRefs }) => {
   useEffect(() => {

@@ -54,7 +54,7 @@ footer {
   /* background-color: aqua;*/
   width: 100%;
   text-align: center;
-  color: #333;
+  color: white;
   font-size: 0.9rem;
   font-weight: 500;
   position: relative; /* Ensures it stays at the bottom of its parent */

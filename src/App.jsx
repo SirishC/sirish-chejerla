@@ -1,11 +1,14 @@
 import React from "react";
 import "./App.css"
-import Layout from "./pages/Portfolio/Layout";
+import Portfolio from "./pages/Portfolio";
+import SpotlightCard from "./components/ui/SpotlightCard";
 
 
 const App = () => {
   return (
-    <Layout/>
+    <SpotlightCard>
+      <Portfolio/>
+    </SpotlightCard>
   );
 };
 
