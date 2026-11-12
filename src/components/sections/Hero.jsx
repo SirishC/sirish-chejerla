@@ -1,12 +1,15 @@
 import { motion } from "framer-motion";
 import data from "../../../metadata/info.json";
 import { DownloadIcon, GithubIcon, LinkedinIcon, CodeIcon, PinIcon, ArrowUpRightIcon } from "../common/Icons";
+import CountUp from "../common/CountUp";
 import "./styles/Hero.css";
 
+// Hero content is visible from the first frame; it only settles into place (no fade from blank).
+const settle = { duration: 0.5, ease: [0.21, 0.6, 0.35, 1] };
 const fade = (delay) => ({
-  initial: { opacity: 0, y: 18 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, delay, ease: [0.21, 0.6, 0.35, 1] },
+  initial: { y: 10 },
+  animate: { y: 0 },
+  transition: { ...settle, delay },
 });
 
 const Hero = () => {
@@ -70,9 +73,7 @@ const Hero = () => {
 
           <motion.div
             className="code-card"
-            initial={{ opacity: 0, y: 24, scale: 0.98 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.3, ease: [0.21, 0.6, 0.35, 1] }}
+            {...fade(0.1)}
             aria-hidden="true"
           >
             <div className="code-bar">
@@ -91,20 +92,17 @@ const Hero = () => {
 {"\n  "}<span className="c-p">stack</span>: [<span className="c-s">{`"Python"`}</span>, <span className="c-s">{`"Java"`}</span>, <span className="c-s">{`"FastAPI"`}</span>,
 {"\n          "}<span className="c-s">{`"React"`}</span>, <span className="c-s">{`"Jenkins"`}</span>, <span className="c-s">{`"Kubernetes"`}</span>],
 {"\n  "}<span className="c-p">basedIn</span>: <span className="c-s">{`"${profile.location_city}, ${profile.location_state}"`}</span>,
-{"\n"}{"}"};
+{"\n"}{"}"};<span className="code-cursor" />
             </pre>
           </motion.div>
         </div>
 
-        <motion.dl
-          className="stats"
-          initial={{ opacity: 0, y: 18 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.45 }}
-        >
+        <motion.dl className="stats" {...fade(0.15)}>
           {highlights.map((h) => (
             <div className="stat" key={h.label}>
-              <dt className="stat-value">{h.value}</dt>
+              <dt className="stat-value">
+                <CountUp value={h.value} />
+              </dt>
               <dd className="stat-label">{h.label}</dd>
             </div>
           ))}

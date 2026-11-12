@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
 import { MenuIcon, CloseIcon, SunIcon, MoonIcon, DownloadIcon } from "../common/Icons";
 import data from "../../../metadata/info.json";
 import "./styles/Header.css";
@@ -7,6 +7,8 @@ import "./styles/Header.css";
 const Header = ({ sections, activeSection, theme, onToggleTheme }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { scrollYProgress } = useScroll();
+  const progress = useSpring(scrollYProgress, { stiffness: 220, damping: 40, restDelta: 0.001 });
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -71,6 +73,8 @@ const Header = ({ sections, activeSection, theme, onToggleTheme }) => {
           </button>
         </div>
       </div>
+
+      <motion.div className="scroll-progress" style={{ scaleX: progress }} aria-hidden="true" />
 
       <AnimatePresence>
         {menuOpen && (
