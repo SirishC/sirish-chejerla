@@ -1,0 +1,60 @@
+.contact-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 48px;
+  padding: 48px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: radial-gradient(ellipse at top left, var(--accent-soft), transparent 60%), var(--bg-elev);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-actions {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.contact-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 14px;
+  border-radius: 10px;
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.contact-link:hover {
+  background: var(--bg-subtle);
+  color: var(--text);
+}
+
+.contact-link svg {
+  color: var(--accent);
+}
+
+@media (max-width: 860px) {
+  .contact-panel {
+    grid-template-columns: 1fr;
+    padding: 28px 20px;
+    gap: 24px;
+  }
+  .contact-actions .btn {
+    width: 100%;
+  }
+  .contact-actions .btn-primary {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

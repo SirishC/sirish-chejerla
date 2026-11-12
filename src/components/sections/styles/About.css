@@ -1,22 +1,64 @@
-.about {
-    color: white;
-    padding: 20px;
-    margin: 30px;
-    background: rgba(0, 253, 200, 0);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.6px);
-    -webkit-backdrop-filter: blur(7.6px);
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: 56px;
+  align-items: start;
+}
+
+.about-text p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.about-text p + p {
+  margin-top: 18px;
+}
+
+.about-text p:first-child {
+  color: var(--text);
+  font-size: 1.15rem;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.focus-card {
+  padding: 22px;
+}
+
+.focus-index {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+}
+
+.focus-card h3 {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.focus-card p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 960px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
   }
-  
-  .points {
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 20px;
-    padding: 10px;
-    margin: 5px;
-    word-wrap: normal;
+}
+
+@media (max-width: 520px) {
+  .focus-grid {
+    grid-template-columns: 1fr;
   }
-  
+}

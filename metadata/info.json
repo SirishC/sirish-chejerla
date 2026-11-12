@@ -5,102 +5,142 @@
     "phone": "2247161859",
     "phone_code": "+1",
     "email_personal": "chejerlasirish@gmail.com",
-    "email_college": "schejerl@purdue.edu",
     "linkedin": "https://www.linkedin.com/in/sirish-c/",
     "github": "https://github.com/SirishC",
     "leetcode": "https://leetcode.com/u/SirishC/",
-    "location_country": "US",
-    "location_city": "Hammond",
-    "location_state": "Indiana",
-    "roles": ["Software Engineer", "DevOps Engineer", "Frontend Developer"]
+    "resume": "/Sirish_Chejerla_Resume.pdf",
+    "location_country": "USA",
+    "location_city": "Allen",
+    "location_state": "TX",
+    "title": "Software Engineer",
+    "roles": ["Backend & APIs", "Automation & CI/CD", "Cloud & Distributed Systems"],
+    "headline": "I build backend services, automation platforms, and real-time monitoring systems that keep production software — and the networks behind it — reliable.",
+    "summary": [
+      "Software Engineer with 3.5+ years of experience building backend services, automation platforms, cloud-native applications, and distributed systems.",
+      "I engineer scalable REST APIs, CI/CD pipelines, real-time monitoring solutions, and AI-powered knowledge systems using Python, Java, FastAPI, React.js, Jenkins, and cloud technologies.",
+      "I pair strong software fundamentals with hands-on depth in microservices, system reliability, performance engineering, and network protocols to ship robust, production-ready solutions."
+    ],
+    "focus": [
+      { "title": "Backend & APIs", "text": "FastAPI, Node.js, and Spring Boot services, REST APIs, WebSockets, and microservices." },
+      { "title": "Automation & Testing", "text": "Jira-triggered CI pipelines, Robot Framework suites, soak, regression, and performance testing." },
+      { "title": "Cloud & DevOps", "text": "AWS, Azure, Docker, Kubernetes, and Jenkins for repeatable, reliable deployments." },
+      { "title": "Networking & AI Tooling", "text": "Broadband gateway validation across GPON / XGS-PON, plus RAG-based knowledge assistants." }
+    ]
   },
+  "highlights": [
+    { "value": "3.5+", "label": "Years building production software" },
+    { "value": "~100", "label": "Lab devices monitored in real time" },
+    { "value": "250/mo", "label": "Validation tasks run by automated pipelines" },
+    { "value": "100K+", "label": "Voice messages processed monthly via APIs" }
+  ],
+  "skills": [
+    { "category": "Languages", "items": ["Python", "Java", "JavaScript", "TypeScript", "SQL"] },
+    { "category": "Backend & APIs", "items": ["FastAPI", "Flask", "Node.js", "Express.js", "REST APIs", "Microservices", "WebSockets"] },
+    { "category": "Frontend", "items": ["React.js", "HTML5", "CSS3", "Responsive UI Development"] },
+    { "category": "Databases & Distributed Systems", "items": ["PostgreSQL", "MongoDB", "Oracle", "Apache Kafka", "Distributed Systems"] },
+    { "category": "Networking & Protocols", "items": ["TCP/IP", "UDP", "DNS", "DHCP", "HTTP/HTTPS", "SIP", "IEEE 802.1X", "TR-181", "GPON", "XGS-PON", "Ethernet (AE)", "SFP", "ONT Provisioning"] },
+    { "category": "Cloud & DevOps", "items": ["AWS", "Azure", "Docker", "Kubernetes", "Jenkins", "CI/CD", "Linux", "Shell Scripting"] },
+    { "category": "Testing & Automation", "items": ["Robot Framework", "PyTest", "Selenium", "Locust", "JMeter", "Spirent", "Postman", "Regression Testing", "Performance Testing"] },
+    { "category": "AI & Tools", "items": ["RAG", "Agentic AI", "AI Knowledge Retrieval", "GitHub Copilot", "Git", "Jira", "Grafana", "OAuth 2.0", "JWT", "Agile"] }
+  ],
   "college": [
     {
       "name": "Purdue University Northwest",
-      "location_country": "US",
-      "location_city": "Hammond",
-      "location_state": "Indiana",
-      "GPA": 3.57,
-      "level": "MS Computer Science"
+      "location": "Hammond, Indiana, USA",
+      "level": "M.S. in Computer Science",
+      "dates": "Aug 2023 – May 2025",
+      "gpa": "3.61 / 4.00"
     },
     {
-      "name": "Amrita School of Engineering",
-      "location_country": "IND",
-      "location_city": "Coimbatore",
-      "location_state": "Tamil Nadu",
-      "GPA": 3.33,
-      "level": "B.Tech Computer Science"
+      "name": "Amrita Vishwa Vidyapeetham",
+      "location": "Coimbatore, India",
+      "level": "B.Tech in Computer Science",
+      "dates": "Jun 2016 – Jul 2020",
+      "gpa": "3.33 / 4.00"
     }
   ],
   "work_experience": [
     {
-      "dates": "Aug 2023 - Jan 2024",
-      "company": "Purdue University Northwest",
-      "role": "Graduate Research Assistant / Grader",
-      "description": "Conducted research on gunshot detection to improve time synchronization accuracy, reducing delays from milliseconds to microseconds. Designed Purdue-TimeSync, a Python-based simulation for analyzing network delays, and performed real-time testing at the University Police Building to enhance system reliability. Additionally, evaluated assignments and provided feedback as a grader for graduate-level Algorithms and Software Engineering courses.",
-      "skills": [
-        "Python",
-        "Machine Learning",
-        "Algorithms",
-        "Software Engineering",
-        "Data Analysis"
-      ]
+      "dates": "Sep 2025 – Present",
+      "company": "Capgemini",
+      "client": "AT&T",
+      "role": "Associate Connectivity and Network Engineer",
+      "location": "Plano, TX",
+      "bullets": [
+        "Engineered an end-to-end automated validation pipeline (Python, FastAPI, Jenkins, Robot Framework, Linux) that triggers sanity and regression suites directly from Jira tasks — cutting validation to a 30-minute window, auto-publishing results and diagnostic logs, and processing ~250 validation tasks per month.",
+        "Designed and built a centralized real-time device monitoring platform (Python, FastAPI, WebSockets, PostgreSQL) tracking the health of ~100 lab devices concurrently, detecting CPU spikes and crash-reboots, and capturing diagnostic logs for faster root-cause analysis.",
+        "Developed Python automation and soak-testing workflows for BGW720 and BGW620 broadband gateways using Robot Framework and Spirent traffic generators, enabling repeatable firmware stability, connectivity, and IPv4 traffic validation under sustained load.",
+        "Validated IEEE 802.1X Supplicant, ECO Connectivity, TR-181 & TR-369, and SFP compatibility across GPON, XGS-PON, AE, and External ONT configurations, executing OLT-side provisioning through Nokia AMS.",
+        "Drove next-generation gateway release validation through firmware sanity, regression, interoperability, and stability testing, supporting the platform's progression toward General Availability.",
+        "Built an AI-powered engineering knowledge assistant over internal repository docs and Review Board commands, giving engineers self-service access to implementation guidance and development workflows."
+      ],
+      "skills": ["Python", "FastAPI", "WebSockets", "PostgreSQL", "Jenkins", "Robot Framework", "Spirent", "Linux", "RAG"]
     },
     {
-      "dates": "Jan 2023 - May 2023",
-      "company": "TradeCred",
-      "role": "Frontend Developer (Freelancing)",
-      "description": "Designed and implemented the website’s color scheme, improving visual consistency and increasing user engagement by 20%. Created reusable React components, reducing code duplication by 25%, and developed UI animations that boosted user interaction time by 18%. Optimized the registration flow for HUF, Company, and LLP processes, improving efficiency by 30% and reducing form errors. Ensured seamless alignment and positioning across web and mobile views, achieving a 100% legibility rate.",
-      "skills": [
-        "ReactJS",
-        "Redux",
-        "Git",
-        "JavaScript",
-        "CSS3",
-        "Responsive Design"
-      ]
+      "dates": "Jul 2025 – Sep 2025",
+      "company": "Paychex",
+      "role": "Software Engineer",
+      "location": "Remote",
+      "bullets": [
+        "Integrated frontend validation hooks into 2 payroll dashboards with React and TypeScript, connected to an internal anomaly-detection API — cutting manual HR data-entry steps from 8 to 5.",
+        "Developed 4 Python REST API endpoints to replace legacy point-to-point transfers, reducing inter-service round-trip latency from 600ms to under 180ms.",
+        "Rewrote local Docker configurations to standardize the team environment, reducing new-engineer onboarding setup from 2 days to half a day."
+      ],
+      "skills": ["React", "TypeScript", "Python", "REST APIs", "Docker", "Microservices"]
     },
     {
-      "dates": "Sep 2020 - Dec 2022",
+      "dates": "Jan 2023 – Jul 2023",
+      "company": "Dell Technologies",
+      "role": "Software Developer",
+      "location": "India",
+      "bullets": [
+        "Developed Python and SQL utilities to process hardware telemetry data and support investigation of recurring device issues.",
+        "Contributed to Java Spring Boot backend services, delivering feature enhancements, API integrations, and maintenance.",
+        "Monitored and troubleshot Apache Kafka pipelines, investigating message-processing failures and data-flow issues across backend systems."
+      ],
+      "skills": ["Python", "SQL", "Java", "Spring Boot", "Apache Kafka"]
+    },
+    {
+      "dates": "Sep 2020 – Dec 2022",
       "company": "Genesys Cloud Services",
       "role": "Software Engineer",
-      "description": "Developed and maintained cloud-based applications, specializing in Voicemail Microservices and Predictive Routing on AWS and Azure. Designed automation pipelines that reduced manual testing efforts by 40% using Selenium and Jest. Managed Linux and Windows test servers, ensuring 99.9% uptime and system reliability. Integrated CI/CD pipelines using Jenkins, improving deployment efficiency. Led performance testing with JMeter and Postman, optimizing API response times. Worked on AI-driven customer interaction analytics using Scikit-learn to enhance predictive accuracy.",
-      "skills": [
-        "Kubernetes",
-        "CI/CD",
-        "DevOps",
-        "Jenkins",
-        "JavaScript",
-        "Python",
-        "Docker",
-        "Azure",
-        "AWS",
-        "Grafana",
-        "Postman"
-      ]
+      "location": "Chennai, India",
+      "bullets": [
+        "Developed Python regression suites with Quart to simulate SIP phone interactions and validate voicemail services, reducing regression defects by 35%.",
+        "Supported migration of voicemail services from AWS to a multi-cloud microservices architecture, deploying test workloads as Kubernetes pods and reducing deployment time by 20%.",
+        "Developed and tested agent-setup APIs for call handling and voicemail retrieval, integrating Azure Blob Storage to process 100K+ voice messages per month.",
+        "Automated deployment workflows migrating Genesys Predictive Routing (GPR) to microservices, enabling its first Azure deployment and reducing deployment errors by 25%.",
+        "Designed and validated predictive-scoring routing strategies in Genesys Routing Composer, improving call-routing efficiency by 15%.",
+        "Ran Locust performance tests on GPR APIs to find peak-load bottlenecks, reducing latency by 15% and improving throughput by 10%.",
+        "Monitored Jenkins CI pipelines and regression results to catch release-blocking defects for services targeting 99.9% uptime."
+      ],
+      "skills": ["Python", "Quart", "SIP", "Kubernetes", "AWS", "Azure", "Locust", "Jenkins"]
     }
   ],
   "projects": [
     {
-      "date": "Jun 2020",
-      "title": "Introspective Journal: Diary for Self-Realization (Springer Journal)",
-      "description": "Developed a Flutter mobile app with SQLite for self-development insights visualization. Implemented sentiment analysis using NLP techniques to track user emotions. The application helps users understand behavioral patterns through analytical insights, fostering self-awareness and personal growth.",
-      "link": "https://link.springer.com/chapter/10.1007/978-981-15-4218-3_23",
-      "technologies": ["Flutter", "SQLite", "NLP", "Dart"]
+      "title": "True Interview",
+      "tagline": "AI-tool detection platform for virtual coding interviews",
+      "context": "Purdue University · Mar 2025",
+      "bullets": [
+        "Built a virtual coding-interview platform with React, Node.js, and WebSockets for live candidate sessions.",
+        "Integrated Python's psutil to monitor system processes and flag potential AI-tool usage during interviews.",
+        "Containerized the full application with Docker for consistent deployment."
+      ],
+      "technologies": ["React", "Node.js", "WebSockets", "Python", "Docker"],
+      "link": "https://trueinterview.onrender.com/"
     },
     {
-      "date": "Jun 2021 – Jan 2022",
-      "title": "Live Monitoring AI Prototype",
-      "description": "Developed an AI-powered anomaly detection model utilizing LSTM (Long Short-Term Memory) and Grafana Metrics for real-time cloud monitoring. Deployed the model as a Flask API, significantly enhancing system scalability and improving response times. Analyzed memory leaks and anomalies by leveraging data from staging and production environments, focusing on Redis storage to evaluate memory loss and optimize performance.",
-      "link": "",
-      "technologies": ["Python", "Flask", "Grafana", "LSTM", "Redis"]
-    },
-    {
-      "date": "Nov 2023",
-      "title": "PNWCampusMap",
-      "description": "Led the development of an interactive campus map for Purdue Northwest using React.js and Leaflet APIs. Designed a seamless user interface that allows students and visitors to navigate campus buildings, parking areas, and key landmarks efficiently. Implemented RESTful APIs for frontend-backend communication and optimized location-based searches for quick access.",
-      "link": "",
-      "technologies": ["React.js", "Leaflet.js", "REST API", "Node.js"]
+      "title": "Distributed-System Time Synchronization",
+      "tagline": "Research on clock sync for a multi-node gunshot-detection system",
+      "context": "Purdue University · Aug 2023 – May 2025",
+      "bullets": [
+        "Developed and evaluated a Python time-synchronization simulation tool for a multi-node gunshot-detection system.",
+        "Improved simulated clock synchronization from millisecond to microsecond precision.",
+        "Validated simulation results through field tests."
+      ],
+      "technologies": ["Python", "Distributed Systems", "Research"],
+      "link": ""
     }
   ]
 }
